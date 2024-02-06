@@ -1,0 +1,9 @@
+6. If you've got an error with a line of code, it might be tricky to figure out without seeing the exact line. But, usually, mistakes happen for a few reasons. Maybe there's a typo, or perhaps you're trying to use something before telling the program what it is. Sometimes, mixing up different types of data (like trying to combine words and numbers) can mess things up, or maybe you're trying to do something that doesn't make sense (like dividing by zero). To fix it, first, find out what kind of mistake it is. Is it a spelling mistake, something out of order, or maybe a mix-up with the type of data? Once you know that, you can usually sort it out by correcting the typo, making sure everything is introduced in the right order, or changing the data to the right type.
+
+7. When naming things in code, there are rules. "eggs" works as a name because it starts with a letter and doesn't break any rules. But "100" doesn't fly as a name because you can't start names with numbers. It's like this to keep things clear and make sure names and numbers don't get mixed up.
+
+8. When you need to change one type of data into another, there are three handy functions to know:
+•	int() is for when you need a whole number. It can take a number with a decimal and chop off the decimal part or turn certain strings into numbers, as long as the string looks exactly like a number.
+•	float() is your go-to for turning things into numbers with decimals. Useful for when you're starting with whole numbers or strings that represent numbers with decimals.
+•	str() is for making strings. This is super versatile because you can turn just about anything into a string, whether it's a number, a piece of data, or something else.
+These are like your toolkit for changing data types, making sure you can work with different kinds of information in your code without running into problems.
