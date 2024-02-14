@@ -4,7 +4,7 @@
 percentage = float(input("Enter the percentage: "))
 
 # check and print condition
-if percentage <= 40:
+if percentage >= 0 and percentage <= 40:
     print("Fail")
 elif percentage > 40 and percentage < 50:
     print("Pass")
