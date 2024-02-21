@@ -3,7 +3,7 @@ from datetime import datetime
 # Get the current date and time
 now = datetime.now()
 
-# Extract the day of the week (0=Monday, 6=Sunday)
+# Extract the day of the week in string format
 day_of_week = now.strftime('%A')
 
 # Init dict for week day
