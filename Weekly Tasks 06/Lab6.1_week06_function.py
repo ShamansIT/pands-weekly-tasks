@@ -1,7 +1,3 @@
-"""Напишите функцию, которая выводит меню команд, которые мы можем выполнить, т.е. добавить,
-просмотреть и выйти. Функция должна возвращать то, что выбрал пользователь.
-Проверьте функцию. Нам пока не нужно беспокоиться об обработке ошибок."""
-
 
 def add():
     print("ADD")
@@ -19,13 +15,14 @@ def quit():
 
 
 while True:
-    print("\n1-ADD\t2-VIEW\t3-QUIT")
+    print("\nA -> ADD\tV -> VIEW\tQ -> QUIT")
     choise = input("\nMake your choise:  ")
-    if choise == '1':
+    print(f"You choose {choise}")
+    if choise.upper() == 'A':
         add()
-    elif choise == '2':
+    elif choise.upper() == 'V':
         view()
-    elif choise == '3':
+    elif choise.upper() == 'Q':
         print("PROGRAM COMPLETED!")
         break
     else:
