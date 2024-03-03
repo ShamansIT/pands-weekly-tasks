@@ -41,7 +41,7 @@ while True:
     if choise.upper() == 'A':
         add(students)
     elif choise.upper() == 'V':
-        view()
+        view(students)
     elif choise.upper() == 'Q':
         print("PROGRAM COMPLETED! QUIT!")
         break
