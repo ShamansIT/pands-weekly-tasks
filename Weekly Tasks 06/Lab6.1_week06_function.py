@@ -1,32 +1,49 @@
-"""Напишите функцию, которая выводит меню команд, которые мы можем выполнить, т.е. добавить,
-просмотреть и выйти. Функция должна возвращать то, что выбрал пользователь.
-Проверьте функцию. Нам пока не нужно беспокоиться об обработке ошибок."""
+def readModules():
+    modules = []
+    moduleName = input(
+        "\tEnter the first Module name (blank to quit) :").strip()
+
+    while moduleName != "":
+        module = {}
+        module["name"] = moduleName
+        module["grade"] = int(input("\t\tEnter grade:"))
+        modules.append(module)
+        moduleName = input(
+            "\tEnter next module name (blank to quit) :").strip()
+    return modules
 
 
-def add():
-    print("ADD")
-    pass
+def add(students):
+    currentStudent = {}
+    currentStudent["name"] = input("Enter name :")
+    currentStudent["modules"] = readModules()
+    students.append(currentStudent)
 
 
-def view():
-    print("VIEW")
-    pass
+def view(students):
+    for currentStudent in students:
+        print(currentStudent["name"])
+        displayModules(currentStudent["modules"])
 
 
-def quit():
-    print("QUIT")
-    pass
+def displayModules(modules):
+    print("\tName \tGrade")
+    for module in modules:
+        print(f"\t{ module['name']} \t{ module['grade']}")
 
+
+students = []
 
 while True:
-    print("\n1-ADD\t2-VIEW\t3-QUIT")
+    print("\nA -> ADD\tV -> VIEW\tQ -> QUIT")
     choise = input("\nMake your choise:  ")
-    if choise == '1':
-        add()
-    elif choise == '2':
-        view()
-    elif choise == '3':
-        print("PROGRAM COMPLETED!")
+    print(f"You choose {choise}")
+    if choise.upper() == 'A':
+        add(students)
+    elif choise.upper() == 'V':
+        view(students)
+    elif choise.upper() == 'Q':
+        print("PROGRAM COMPLETED! QUIT!")
         break
     else:
         print("WRONG ENTER! Please try again", end="\n")
