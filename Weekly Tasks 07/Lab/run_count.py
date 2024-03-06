@@ -1,20 +1,20 @@
-FILENAME = "Weekly Tasks 07\Lab\count.txt"
+from path import path_to_count
+import os.path
 
 
 def readNumber():
-    with open(FILENAME) as f:
+    with open(path_to_count) as f:
         number = int(f.read())
-    return number
+        return number
 
 
 def writeNumber(number):
-    with open(FILENAME, "wt") as f:
-        # write takes a string so we need to convert
+    with open(path_to_count, "wt") as f:
         f.write(str(number))
 
 
 # main
 num = readNumber()
 num += 1
-print(f"we have run this program {num} times")
+print(f"We have run this program {num} times")
 writeNumber(num)
