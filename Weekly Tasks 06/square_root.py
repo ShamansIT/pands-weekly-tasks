@@ -1,3 +1,6 @@
+# Weekly Task 6
+# Created by Serhii Spitsyn
+
 import math
 
 

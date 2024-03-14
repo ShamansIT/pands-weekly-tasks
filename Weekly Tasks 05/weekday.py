@@ -1,3 +1,6 @@
+# Weekly Task 5
+# Created by Serhii Spitsyn
+
 from datetime import datetime
 
 # Get the current date and time

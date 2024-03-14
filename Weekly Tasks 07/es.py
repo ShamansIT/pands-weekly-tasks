@@ -1,3 +1,6 @@
+# Weekly Task 7
+# Created by Serhii Spitsyn
+
 import os
 
 file_name = input("Please enter file name(best is: moby-dick.txt) -> ")

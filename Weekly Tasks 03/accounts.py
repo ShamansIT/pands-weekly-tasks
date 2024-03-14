@@ -1,3 +1,5 @@
+# Weekly Task 3
+# Created by Serhii Spitsyn
 # Bank account hide number
 
 # Prompt the user to enter an account number

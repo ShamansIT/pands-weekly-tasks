@@ -1,3 +1,6 @@
+# Weekly Task 4
+# Created by Serhii Spitsyn
+
 import random
 
 # init variables
